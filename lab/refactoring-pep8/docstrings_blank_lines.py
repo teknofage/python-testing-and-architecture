@@ -2,11 +2,11 @@
 # Docstrings and blank lines
 class OnBoardTemperatureSensor:
     """
-    construct a temperature sensor
-    have it read the voltage
-    have it get the temperature by converting it from the voltage
+    Construct a temperature sensor.
+    Have it read the voltage.
+    Have it get the temperature by converting it from the voltage.
     
-    returns: float(voltage)
+    Returns: float(voltage).
     """
     VOLTAGE_TO_TEMP_FACTOR = 5.6
     def __init__(self):
@@ -20,11 +20,11 @@ class OnBoardTemperatureSensor:
 
 class CarbonMonoxideSensor:
     """
-    construct a carbon monoxide sensor
-    have it read the carbon monoxide level
-    have it read the sensor voltage
+    Construct a carbon monoxide sensor.
+    Have it read the carbon monoxide level.
+    Have it read the sensor voltage.
     
-    returns: carbon_monoxide level based on temperature and voltage
+    Returns: carbon_monoxide level based on temperature and voltage.
     """
     VOLTAGE_TO_CO_FACTOR = 0.048
     def __init__(self, temperature_sensor):
@@ -53,10 +53,10 @@ class DisplayUnit:
         
 class CarbonMonoxideDevice():
     """
-    construct a carbon monoxide device
-    have it display the cabon monoxide level
+    Construct a carbon monoxide device.
+    Have it display the cabon monoxide level.
     
-    returns: display message of carbon_monoxide level 
+    Returns: Display message of carbon monoxide level.
     """
     def __init__(self, co_sensor, display_unit):
         self.carbonMonoxideSensor = co_sensor 
