@@ -2,12 +2,16 @@
 # Replace temp with query
 # Code snippet. Not runnable.
 def get_base_price(quantity, item_price):
-    return quantity * item_price
+    base_price = quantity * item_price
+    return base_price
 
-def get_price():
+def get_discount(base_price):
     discount_factor = 0
-    if get_base_price() > 1000: 
+    if base_price > 1000: 
         discount_factor = 0.95
     else: 
         discount_factor = 0.98
-    return get_base_price() * discount_factor
+    return discount_factor
+
+def get_total(base_price, discount_factor):
+    return base_price * discount_factor
