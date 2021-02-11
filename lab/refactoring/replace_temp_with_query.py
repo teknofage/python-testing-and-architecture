@@ -14,4 +14,5 @@ def get_discount(base_price):
     return discount_factor
 
 def get_total(base_price, discount_factor):
-    return base_price * discount_factor
+    total = base_price * discount_factor
+    return total
