@@ -1,20 +1,35 @@
 # By Kami Bigdely
-# Introduce explaining variable (alias extract variable)
-# Reference: https://www.researchgate.net/publication/305768969_The_role_of_eye_characteristics_in_facial_beauty_likability_and_attractiveness
-# Background: You are a computer engineer trying to sift through many profiles to find 
-# your soulmate. Unfortunately, there are too many profiles and it's getting tedious. You write a 
-# python script to scrape profiles info (such as height, age, etc) and images (for image processing) 
-# to figure out automatically who is attractive to you.  Here is a part of the script:
-import math
-# assuming you have extracted the following info from the profile's image.
-eye_size = 0.47    # [cm^2]
-eye_width = 24.2   # [mm]
-eye_height = 23.7  # [mm]
+# Remove assignment to method parameter.
+class Distance:
+    def __init__(self, value, unit):
+        self.unit = unit
+        self.value = value
+class Mass:
+    def __init__(self, value, unit):
+        self.value = value
+        self.unit = unit
+def calculate_kinetic_energy(mass, distance, time):
+    if distance.unit != 'km':
+        if distance.unit == "ly":  # [ly] stands for light-year (measure of distance in astronomy)
+            # convert from light-year to km unit        
+            in_km = distance.value * 9.461e12
+            distance = Distance(in_km, "km") 
+        else:
+            print ("unit is Unknown")
+            return
+    speed = distance.value/time # [km per sec]
+    if mass.unit != 'kg':
+        if mass.unit == "solar-mass":
+            # convert from solar mass to kg
+            value = mass.value * 1.98892e30 # [kg]
+            mass = Mass(value, 'kg')
+        else:
+            print ("unit is Unknown")
+            return    
+        
+    kinetic_energy = 0.5 * mass.value * speed ** 2
+    return kinetic_energy
 
-iris_width = 20.2  # [mm]
-iris_height = 19.7 # [mm]
-
-if eye_size > 0.45 and (math.pi*iris_width/2*iris_height/2) / eye_size >= 0.69 and \
-        eye_height/eye_width >= 0.59:
-    print("I’m sorry I wasn’t part of your past, can I make it up by being in your future?")
-    
+mass = Mass(2, "solar-mass")
+distance = Distance(2, 'ly')
+print(calculate_kinetic_energy(mass, distance, 3600e20))
