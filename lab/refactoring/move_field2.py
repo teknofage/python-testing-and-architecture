@@ -27,7 +27,7 @@ class Wheel:
 
     def install_tire(self):
         print('remove old tube.')
-         # TODO: Rewrite the following after moving tpms to the 'Wheel' class
+        # TODO: Rewrite the following after moving tpms to the 'Wheel' class
         print('cleaned tpms: ', 
               self.tpms_di[self.wheel_location].get_serial_number, 
               '.')
