@@ -80,7 +80,7 @@ Study '**remove_control_flag2.py**' and '**remove_control_flag3.py**'. Use 'remo
 
 ## Exercise 20: 'Replace Nested Conditional With Gaurd Clauses' Technique
 
-Study '**replace_nested_conditional_with_gaurd_clauses.py**'. Use 'replace nested conditional with gaurded clauses' technique in combination with any other refactoring technique you've learned to improve readability/modularity of the code.
+Study '**replace_nested_conditional_with_guard_clauses.py**'. Use 'replace nested conditional with guarded clauses' technique in combination with any other refactoring technique you've learned to improve readability/modularity of the code.
 
 
 ## Exercise 21: 'Move Attribute' Technique
