@@ -62,9 +62,9 @@ Study the file '**consolidate_duplicate_conditional_fragments.py**'. Use 'consol
 
 Study the file '**remove_control_flag**'.py. Use 'remove control flag' technique to improve readability of the code.
 
-## Exercise  16: 'Replace Nested Conditional with Gaurd Clauses' Technique
+## Exercise  16: 'Replace Nested Conditional with Guard Clauses' Technique
 
-Study the file '**replace_nested_conditional_with_gaurd_clauses2.py**'.py. Use 'Replace Nested Conditional with Gaurd Clauses' technique to improve readability of the code.
+Study the file '**replace_nested_conditional_with_guard_clauses2.py**'.py. Use 'Replace Nested Conditional with Gaurd Clauses' technique to improve readability of the code.
 
 ## Exercise  17: 'Decompose Conditional' Technique
 
