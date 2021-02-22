@@ -3,16 +3,11 @@
 def find_food(food, fridge):
     for item in fridge:
         if food in item:
-            found = True
-            item_name = item
-            break
-    if found:
-        return item_name
-    else:
-        return None
+            return item
+    return None
 
 if __name__ == "__main__":
     food = 'wasabi'
     food_list = ['onion', 'cucumber','Guacamole', 'kabob barg', 'wasabi']
     found_item = find_food(food, food_list)
-    print(food, "Found: " + found_item  if found_item != None else "not found")
+    print("Food:", food, "Found: " + found_item  if found_item != None else "not found")
